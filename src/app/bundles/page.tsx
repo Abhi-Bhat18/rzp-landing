@@ -31,8 +31,7 @@ export default function Bundles() {
               <ul className="mt-6 space-y-4">
                 <li className="flex items-center text-gray-600">
                   <span className="mr-2 text-green-500">✓</span>
-                  Payment Gateway/Payment App
-                </li>
+                  Payment Gateway
                 <li className="flex items-center text-gray-600">
                   <span className="mr-2 text-green-500">✓</span>
                   Razorpay X
