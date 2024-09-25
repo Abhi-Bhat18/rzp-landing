@@ -1,10 +1,9 @@
 import React from "react";
-import { IconCircleDashedCheck } from "@tabler/icons-react";
+import { IconCircleDashedCheck, IconProps } from "@tabler/icons-react";
 
 interface Props {
   cardName: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  Icon: any;
+  Icon: React.ForwardRefExoticComponent<IconProps>;
   timeOver: boolean;
 }
 

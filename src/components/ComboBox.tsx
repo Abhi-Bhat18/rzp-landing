@@ -19,12 +19,11 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-
-interface Props { 
-  items : { value : string , label : string } []
+interface Props {
+  items: { value: string; label: string }[];
 }
 
-export const ComboboxDemo : React.FC<Props> = ({ items}) => {
+export const ComboboxDemo: React.FC<Props> = ({ items }) => {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
 
@@ -73,4 +72,4 @@ export const ComboboxDemo : React.FC<Props> = ({ items}) => {
       </PopoverContent>
     </Popover>
   );
-}
+};

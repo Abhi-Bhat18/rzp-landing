@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { ComboboxDemo } from "../something/compbox";
+import { ComboboxDemo } from "@/components/ComboBox";
 import { RzpUsage } from "./RzpUsage";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
@@ -30,7 +30,10 @@ const paymentGateways = [
   { value: "Bank Gateways", label: "Bank Gateways" },
 ];
 
-const Setp1 = ({ nextStep }: any) => {
+interface Props { 
+  nextStep: () => void
+}
+const Setp1 : React.FC<Props> = ({ nextStep  }) => {
   const [hasPg, setHasPg] = useState<string | null>(null); // State to track the selected radio option
 
   // Handle changes in the radio group

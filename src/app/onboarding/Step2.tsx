@@ -4,10 +4,11 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 interface Props {
-  prevStep: () => void;
+  prevStep?: () => void;
 }
 
-const Step2: React.FC<Props> = ({ prevStep }) => {
+const Step2: React.FC<Props> = ({ }) => {
+
   return (
     <div className="space-y-10">
       <div className="space-y-5">

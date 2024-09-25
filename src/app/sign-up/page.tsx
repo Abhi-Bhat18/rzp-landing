@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { IconBrandGoogle } from "@tabler/icons-react";
 
 import React from "react";
-import { ComboboxDemo } from "../something/compbox";
+import { ComboboxDemo } from "@/components/ComboBox";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Label } from "@/components/ui/labe";
