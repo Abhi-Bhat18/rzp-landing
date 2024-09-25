@@ -65,7 +65,7 @@ const Kyc = () => {
       <div className="absolute top-10 left-10">
         <Logo w={200} />
       </div>
-      <div className="bg-white w-full max-w-2xl h-full rounded-md shadow-sm p-10 space-y-10">
+      <div className="bg-white h-fit w-full max-w-2xl rounded-md shadow-sm p-10 space-y-10">
         <Link href={"/bundles"} className="flex space-x-2">
           <IconCircleChevronLeft /> <span>Back</span>
         </Link>
@@ -74,7 +74,9 @@ const Kyc = () => {
           <p>You can finish each section in any order</p>
         </div>
         <div className="space-y-5">
-          <p className="text-xl">YET TO COMPLETE</p>
+          <p className="text-xl">
+            {currentIndex > 4 ? "COMPLETED" : "YET TO COMPLETE"}
+          </p>
           <div className="grid grid-cols-2 gap-10">
             {docStatus.map((doc, index) => {
               return (
@@ -90,7 +92,9 @@ const Kyc = () => {
         </div>
         <div className="w-full">
           <Button disabled={currentIndex <= 4} className="w-full">
-            <Link className="w-full" href={"/complete"}>Submit KYC</Link>
+            <Link className="w-full" href={"/complete"}>
+              Submit KYC
+            </Link>
           </Button>
         </div>
       </div>

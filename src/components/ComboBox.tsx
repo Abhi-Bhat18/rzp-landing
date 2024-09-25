@@ -28,7 +28,8 @@ interface Props {
 
 export const ComboboxDemo: React.FC<Props> = ({ items, name }) => {
   const [open, setOpen] = React.useState(false);
-  const [value, setValue] = React.useState("");
+
+  const [value, setValue] = React.useState(name ==='country' ? 'India' : '');
 
   const dispatch = useAppDispatch();
   const formData = useAppSelector((state) => state.onboard);
@@ -43,6 +44,7 @@ export const ComboboxDemo: React.FC<Props> = ({ items, name }) => {
     );
     setOpen(false);
   };
+
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>

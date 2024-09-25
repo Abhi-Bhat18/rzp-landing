@@ -45,11 +45,11 @@ const page = () => {
             </div>
             <div className="space-y-2">
               <Label>Email</Label>
-              <Input type="email" placeholder="John.doe@gmail.com" />
+              <Input type="email" placeholder="" />
             </div>
             <div className="space-y-2">
               <Label>Contact</Label>
-              <Input type="text" placeholder="9113021966" />
+              <Input type="text" placeholder="" />
             </div>
           </div>
           <div className="space-y-1">

@@ -1,20 +1,27 @@
+'use client'
 import Logo from "@/components/Logo";
 import Link from "next/link";
 import CustomBundle from "./CustomBundle";
+import { useRouter } from "next/navigation";
 
 export default function Bundles() {
+  const router = useRouter();
+
+  const handleClick = () => { 
+    router.push('/kyc');
+  }
+
   return (
     <div className="bg-gray-100 py-14 h-screen relative">
       <div className="absolute top-10 left-10">
         <Logo w={150} />
       </div>
       <div className="container mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center text-gray-800">
-          Choose the plan that’s right for you
+        <h2 className="text-xl font-bold text-center text-gray-800">
+          Based on what we see our existing merchants use,
         </h2>
-
         <p className="text-center text-gray-500 mt-4">
-          The perfect plan for growing teams.
+          we believe this bundle is the best fit for you.
         </p>
 
         <p className="mt-4"></p>
@@ -22,9 +29,11 @@ export default function Bundles() {
           {/* Basic Plan */}
           <div className="p-8 bg-white rounded-xl shadow-md border border-gray-300 flex flex-col justify-between">
             <div>
-              <h3 className="text-xl font-semibold text-gray-800">Growth</h3>
+              <h3 className="text-xl font-semibold text-gray-800">
+                Growth Bundle
+              </h3>
               <p className="mt-4 text-gray-500">
-                For small teams and startups.
+                Key products to fuel your business growth.
               </p>
               {/* <p className="mt-8 text-4xl font-bold text-gray-800">$10</p>
             <p className="text-gray-500">per month</p> */}
@@ -32,6 +41,7 @@ export default function Bundles() {
                 <li className="flex items-center text-gray-600">
                   <span className="mr-2 text-green-500">✓</span>
                   Payment Gateway
+                </li>
                 <li className="flex items-center text-gray-600">
                   <span className="mr-2 text-green-500">✓</span>
                   Razorpay X
@@ -47,16 +57,18 @@ export default function Bundles() {
               </ul>
             </div>
 
-            <button className="mt-8 w-full bg-blue-600 text-white py-2 rounded-lg">
-              <Link className="w-full" href={"/kyc"}>Choose Growth</Link>
+            <button onClick={handleClick} className="mt-8 w-full bg-[#011162] text-white py-2 rounded-lg">
+                Choose Growth
             </button>
           </div>
 
           {/* Most Popular Plan */}
-          <div className="p-8 bg-blue-600 rounded-xl shadow-md text-white border-4 border-blue-600 transform scale-105 flex flex-col justify-between">
+          <div className="p-8 b rounded-xl shadow-md text-white border-4 bg-[#011162] border-[#011162]transform scale-105 flex flex-col justify-between">
             <div>
-              <h3 className="text-xl font-semibold">Premium</h3>
-              <p className="mt-4"> For large teams and organizations.</p>
+              <h3 className="text-xl font-semibold">Premium Bundle</h3>
+              <p className="mt-4">
+                Comprehensive solutions for maximum business success.
+              </p>
             </div>
             {/* <p className="mt-8 text-4xl font-bold">$30</p>
             <p>per month</p> */}
@@ -86,8 +98,8 @@ export default function Bundles() {
                 Turbo UPI
               </li>
             </ul>
-            <button className="mt-8 w-full bg-white text-blue-600 py-2 rounded-lg">
-              <Link className="w-full" href={"/kyc"}>Choose Premium</Link>
+            <button onClick={handleClick} className="mt-8 w-full bg-white text-blue-600 py-2 rounded-lg">
+                Choose Premium
             </button>
             <div className="absolute top-0 right-0 bg-red-500 text-xs font-bold px-3 py-1 rounded-bl-lg">
               Most Popular
@@ -97,9 +109,11 @@ export default function Bundles() {
           {/* Essential Plan */}
           <div className="p-8 bg-white rounded-xl shadow-md border border-gray-300 flex flex-col justify-between">
             <div>
-              <h3 className="text-xl font-semibold text-gray-800">Essential</h3>
+              <h3 className="text-xl font-semibold text-gray-800">
+                Essential Bundle
+              </h3>
               <p className=" text-gray-500 mt-4">
-                Simple pricing for your business.
+                Core products for essential business operations.
               </p>
               {/* <p className="mt-8 text-4xl font-bold text-gray-800">$50</p>
             <p className="text-gray-500">per month</p> */}
@@ -115,8 +129,8 @@ export default function Bundles() {
               </ul>
             </div>
 
-            <button className="mt-8 w-full bg-blue-600 text-white py-2 rounded-lg">
-              <Link className="w-full" href={"/kyc"}>Choose Essentials </Link>
+            <button onClick={handleClick} className="mt-8 w-full bg-[#011162] text-white py-2 rounded-lg">
+                Choose Essentials{" "}
             </button>
           </div>
         </div>

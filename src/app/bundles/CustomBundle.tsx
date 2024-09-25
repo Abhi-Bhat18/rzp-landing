@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Dialog,
@@ -9,7 +10,8 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/labe";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+
+import { useRouter } from "next/navigation";
 
 const bundles = [
   "Payment Gateway",
@@ -21,6 +23,8 @@ const bundles = [
 ];
 
 const CustomBundle = () => {
+  const router = useRouter();
+  const handleClick = () => router.push("/kyc");
   return (
     <Dialog>
       <DialogTrigger className="text-blue-600">
@@ -36,9 +40,7 @@ const CustomBundle = () => {
             return <Bundles key={index} bundleName={bundle} />;
           })}
         </DialogHeader>
-        <Button>
-          <Link href={"/kyc"}>Submit</Link>
-        </Button>
+        <Button onClick={handleClick}>Submit</Button>
       </DialogContent>
     </Dialog>
   );
