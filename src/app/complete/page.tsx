@@ -15,18 +15,16 @@ const Complete = () => {
             src={
               "https://github.com/user-attachments/assets/13be169b-b675-4b5f-872d-dda4328f4060"
             }
-            alt='thank you'
+            alt="thank you"
             width={500}
             height={500}
-            className='rounded-lg'
+            className="rounded-lg"
           />
         </div>
-        <p className="text-2xl">Thank you for submitting your basic details</p>
-        <p>
-          As a next step, complete your KYC to activate payment for your account
-        </p>
-        <div className='w-full'>
-          <Button className='w-full'>Continue to Dashboard</Button>
+        <p className="text-2xl">Thank you for sharing the details</p>
+        <p>Our team will reach out to you in 48 hours.</p>
+        <div className="w-full">
+          <Button className="w-full">Continue to Dashboard</Button>
         </div>
       </div>
     </div>
