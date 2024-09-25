@@ -18,43 +18,49 @@ export default function Bundles() {
         </p>
 
         <p className="mt-4"></p>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 ">
           {/* Basic Plan */}
-          <div className="p-8 bg-white rounded-xl shadow-md border border-gray-300">
-            <h3 className="text-xl font-semibold text-gray-800">Growth</h3>
-            <p className="mt-4 text-gray-500">For small teams and startups.</p>
-            <p className="mt-8 text-4xl font-bold text-gray-800">Bundle 1</p>
-            <p className="text-gray-500">Something</p>
-            <ul className="mt-6 space-y-4">
-              <li className="flex items-center text-gray-600">
-                <span className="mr-2 text-green-500">✓</span>
-                Payment Gateway/Payment App
-              </li>
-              <li className="flex items-center text-gray-600">
-                <span className="mr-2 text-green-500">✓</span>
-                Razorpay X
-              </li>
-              <li className="flex items-center text-gray-600">
-                <span className="mr-2 text-green-500">✓</span>
-                POS
-              </li>
-              <li className="flex items-center text-gray-600">
-                <span className="mr-2 text-green-500">✓</span>
-                Billre
-              </li>
-            </ul>
+          <div className="p-8 bg-white rounded-xl shadow-md border border-gray-300 flex flex-col justify-between">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800">Growth</h3>
+              <p className="mt-4 text-gray-500">
+                For small teams and startups.
+              </p>
+              {/* <p className="mt-8 text-4xl font-bold text-gray-800">$10</p>
+            <p className="text-gray-500">per month</p> */}
+              <ul className="mt-6 space-y-4">
+                <li className="flex items-center text-gray-600">
+                  <span className="mr-2 text-green-500">✓</span>
+                  Payment Gateway/Payment App
+                </li>
+                <li className="flex items-center text-gray-600">
+                  <span className="mr-2 text-green-500">✓</span>
+                  Razorpay X
+                </li>
+                <li className="flex items-center text-gray-600">
+                  <span className="mr-2 text-green-500">✓</span>
+                  POS
+                </li>
+                <li className="flex items-center text-gray-600">
+                  <span className="mr-2 text-green-500">✓</span>
+                  Billre
+                </li>
+              </ul>
+            </div>
+
             <button className="mt-8 w-full bg-blue-600 text-white py-2 rounded-lg">
               <Link href={"/kyc"}>Choose Growth</Link>
             </button>
           </div>
 
           {/* Most Popular Plan */}
-          <div className="p-8 bg-blue-600 rounded-xl shadow-md text-white border-4 border-blue-600 transform scale-105">
-            <h3 className="text-xl font-semibold">Premium</h3>
-            <p className="mt-4"> For large teams and organizations.</p>
-
-            <p className="mt-8 text-4xl font-bold">$30</p>
-            <p>per month</p>
+          <div className="p-8 bg-blue-600 rounded-xl shadow-md text-white border-4 border-blue-600 transform scale-105 flex flex-col justify-between">
+            <div>
+              <h3 className="text-xl font-semibold">Premium</h3>
+              <p className="mt-4"> For large teams and organizations.</p>
+            </div>
+            {/* <p className="mt-8 text-4xl font-bold">$30</p>
+            <p>per month</p> */}
             <ul className="mt-6 space-y-4">
               <li className="flex items-center">
                 <span className="mr-2">✓</span>
@@ -90,23 +96,26 @@ export default function Bundles() {
           </div>
 
           {/* Essential Plan */}
-          <div className="p-8 bg-white rounded-xl shadow-md border border-gray-300">
-            <h3 className="text-xl font-semibold text-gray-800">Essential</h3>
-            <p className=" text-gray-500 mt-4">
-              Simple pricing for your business.
-            </p>
-            <p className="mt-8 text-4xl font-bold text-gray-800">$50</p>
-            <p className="text-gray-500">per month</p>
-            <ul className="mt-6 space-y-4">
-              <li className="flex items-center text-gray-600">
-                <span className="mr-2 text-green-500">✓</span>
-                Payment Gateway/Payment App
-              </li>
-              <li className="flex items-center text-gray-600">
-                <span className="mr-2 text-green-500">✓</span>
-                POS
-              </li>
-            </ul>
+          <div className="p-8 bg-white rounded-xl shadow-md border border-gray-300 flex flex-col justify-between">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800">Essential</h3>
+              <p className=" text-gray-500 mt-4">
+                Simple pricing for your business.
+              </p>
+              {/* <p className="mt-8 text-4xl font-bold text-gray-800">$50</p>
+            <p className="text-gray-500">per month</p> */}
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center text-gray-600">
+                  <span className="mr-2 text-green-500">✓</span>
+                  Payment Gateway/Payment App
+                </li>
+                <li className="flex items-center text-gray-600">
+                  <span className="mr-2 text-green-500">✓</span>
+                  POS
+                </li>
+              </ul>
+            </div>
+
             <button className="mt-8 w-full bg-blue-600 text-white py-2 rounded-lg">
               <Link href={"/kyc"}>Choose Essentials </Link>
             </button>

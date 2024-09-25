@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 
 const Hero = () => {
@@ -14,7 +15,9 @@ const Hero = () => {
           <p className=" text-gray-900">for India&apos;s finest disruptors</p>
         </div>
         <div className="">
-          <Button>Sign up know</Button>
+          <Button>
+            <Link href={'/sign-up'}>Sign up know</Link>
+          </Button>
         </div>
       </div>
     </div>
