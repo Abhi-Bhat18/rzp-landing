@@ -26,7 +26,7 @@ const Complete = () => {
           As a next step, complete your KYC to activate payment for your account
         </p>
         <div className='w-full'>
-          <Button className='w-full'>Complete KYC</Button>
+          <Button className='w-full'>Continue to Dashboard</Button>
         </div>
       </div>
     </div>

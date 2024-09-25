@@ -62,7 +62,6 @@ const Setp1 : React.FC<Props> = ({ nextStep  }) => {
         </p>
         <RadioGroup
           onValueChange={handlePgChange} // Updated to handle radio selection
-          defaultValue="No"
           className="flex space-x-5"
         >
           <div className="flex items-center space-x-2">

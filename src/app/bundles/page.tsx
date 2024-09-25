@@ -49,7 +49,7 @@ export default function Bundles() {
             </div>
 
             <button className="mt-8 w-full bg-blue-600 text-white py-2 rounded-lg">
-              <Link href={"/kyc"}>Choose Growth</Link>
+              <Link className="w-full" href={"/kyc"}>Choose Growth</Link>
             </button>
           </div>
 
@@ -88,7 +88,7 @@ export default function Bundles() {
               </li>
             </ul>
             <button className="mt-8 w-full bg-white text-blue-600 py-2 rounded-lg">
-              <Link href={"/kyc"}>Choose Premium</Link>
+              <Link className="w-full" href={"/kyc"}>Choose Premium</Link>
             </button>
             <div className="absolute top-0 right-0 bg-red-500 text-xs font-bold px-3 py-1 rounded-bl-lg">
               Most Popular
@@ -117,7 +117,7 @@ export default function Bundles() {
             </div>
 
             <button className="mt-8 w-full bg-blue-600 text-white py-2 rounded-lg">
-              <Link href={"/kyc"}>Choose Essentials </Link>
+              <Link className="w-full" href={"/kyc"}>Choose Essentials </Link>
             </button>
           </div>
         </div>

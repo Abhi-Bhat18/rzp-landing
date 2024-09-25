@@ -58,7 +58,7 @@ const page = () => {
           </div>
           <div className="w-full">
             <Button className="w-full cursor-pointer">
-              <Link href={"/onboarding"}>Continue</Link>
+              <Link className="w-full" href={"/onboarding"}>Continue</Link>
             </Button>
           </div>
           <div>

@@ -90,7 +90,7 @@ const Kyc = () => {
         </div>
         <div className="w-full">
           <Button disabled={currentIndex <= 4} className="w-full">
-            <Link href={"/complete"}>Submit KYC</Link>
+            <Link className="w-full" href={"/complete"}>Submit KYC</Link>
           </Button>
         </div>
       </div>

@@ -30,7 +30,7 @@ const Step2: React.FC<Props> = ({ }) => {
     const form = useAppSelector(state => state.onboard);
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-8">
       {form.industry === "e commerce" ? (
         <>
           {eCommerceQuestions.map((ele, ind) => (
