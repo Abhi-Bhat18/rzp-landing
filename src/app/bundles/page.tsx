@@ -43,7 +43,7 @@ export default function Bundles() {
                 </li>
                 <li className="flex items-center text-gray-600">
                   <span className="mr-2 text-green-500">✓</span>
-                  Billre
+                  Billme
                 </li>
               </ul>
             </div>
@@ -64,7 +64,7 @@ export default function Bundles() {
             <ul className="mt-6 space-y-4">
               <li className="flex items-center">
                 <span className="mr-2">✓</span>
-                Payment Gateway / Payment App
+                Payment Gateway
               </li>
               <li className="flex items-center">
                 <span className="mr-2">✓</span>
@@ -76,7 +76,7 @@ export default function Bundles() {
               </li>
               <li className="flex items-center">
                 <span className="mr-2">✓</span>
-                Engage HQ + Billre
+                Engage HQ + Billme
               </li>
               <li className="flex items-center">
                 <span className="mr-2">✓</span>
@@ -84,7 +84,7 @@ export default function Bundles() {
               </li>
               <li className="flex items-center">
                 <span className="mr-2">✓</span>
-                Turbo
+                Turbo UPI
               </li>
             </ul>
             <button className="mt-8 w-full bg-white text-blue-600 py-2 rounded-lg">
@@ -107,7 +107,7 @@ export default function Bundles() {
               <ul className="space-y-4 mt-6">
                 <li className="flex items-center text-gray-600">
                   <span className="mr-2 text-green-500">✓</span>
-                  Payment Gateway/Payment App
+                  Payment Gateway
                 </li>
                 <li className="flex items-center text-gray-600">
                   <span className="mr-2 text-green-500">✓</span>

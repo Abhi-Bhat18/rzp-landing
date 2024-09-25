@@ -15,9 +15,9 @@ const bundles = [
   "Payment Gateway",
   "Razorpay X",
   "Optimizer",
-  "Engage HQ + Billre",
+  "Engage HQ + Billme",
   "POS",
-  "Turbo",
+  "Turbo UPI",
 ];
 
 const CustomBundle = () => {
@@ -28,15 +28,16 @@ const CustomBundle = () => {
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle className="space-y-5">Select your services</DialogTitle>
+          <DialogTitle className="space-y-5">
+            {" "}
+            Create your custom bundle !
+          </DialogTitle>
           {bundles.map((bundle, index) => {
             return <Bundles key={index} bundleName={bundle} />;
           })}
         </DialogHeader>
         <Button>
-            <Link href={'/kyc'}>
-            Submit
-            </Link>
+          <Link href={"/kyc"}>Submit</Link>
         </Button>
       </DialogContent>
     </Dialog>
