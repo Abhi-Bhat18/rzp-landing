@@ -37,7 +37,7 @@ const Onboarding = () => {
   };
 
   return (
-    <div className="w-full h-screen flex justify-center py-10 relative bg-gray-100">
+    <div className="w-full min-h-screen flex justify-center py-10 relative bg-gray-100">
       <div className="absolute top-10 left-20">
         <Image width={200} src={rzp} alt="Rzp logo" />
       </div>

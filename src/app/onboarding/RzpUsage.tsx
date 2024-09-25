@@ -16,29 +16,29 @@ import {
 
 const items = [
   {
-    id: "recents",
-    label: "Recents",
+    id: "On my website",
+    label: "On my website",
   },
   {
-    id: "home",
-    label: "Home",
+    id: "On my Android app",
+    label: "On my Android app",
   },
   {
-    id: "applications",
-    label: "Applications",
+    id: "On my iOS app",
+    label: "On my iOS app",
   },
   {
-    id: "desktop",
-    label: "Desktop",
+    id: "On Social media like Facebook and Instgram",
+    label: "On Social media like Facebook and Instgram",
   },
   {
-    id: "downloads",
-    label: "Downloads",
+    id: "On Whats App, SMS or Email",
+    label: "On Whats App, SMS or Email",
   },
   {
-    id: "documents",
-    label: "Documents",
-  },
+    id: "Card swipe machines for persona payments",
+    label: "Card swipe machines for persona payments",
+  }
 ] as const;
 
 const FormSchema = z.object({

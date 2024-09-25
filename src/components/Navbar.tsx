@@ -69,7 +69,7 @@ export const Navbar = () => {
                   >
                     {/* <Icons.logo className="h-6 w-6" /> */}
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      Payments
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Beautifully designed components that you can copy and
@@ -92,7 +92,7 @@ export const Navbar = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Banking +</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -110,7 +110,7 @@ export const Navbar = () => {
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+              Payroll
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

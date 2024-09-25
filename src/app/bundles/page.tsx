@@ -2,7 +2,6 @@ import Logo from "@/components/Logo";
 import Link from "next/link";
 import CustomBundle from "./CustomBundle";
 
-
 export default function Bundles() {
   return (
     <div className="bg-gray-100 py-14 h-screen relative">
@@ -13,9 +12,12 @@ export default function Bundles() {
         <h2 className="text-3xl font-bold text-center text-gray-800">
           Choose the plan that’s right for you
         </h2>
+
         <p className="text-center text-gray-500 mt-4">
-          Simple pricing for your business.
+          The perfect plan for growing teams.
         </p>
+
+        <p className="mt-4"></p>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Basic Plan */}
           <div className="p-8 bg-white rounded-xl shadow-md border border-gray-300">
@@ -49,7 +51,8 @@ export default function Bundles() {
           {/* Most Popular Plan */}
           <div className="p-8 bg-blue-600 rounded-xl shadow-md text-white border-4 border-blue-600 transform scale-105">
             <h3 className="text-xl font-semibold">Premium</h3>
-            <p className="mt-4">The perfect plan for growing teams.</p>
+            <p className="mt-4"> For large teams and organizations.</p>
+
             <p className="mt-8 text-4xl font-bold">$30</p>
             <p>per month</p>
             <ul className="mt-6 space-y-4">
@@ -86,11 +89,11 @@ export default function Bundles() {
             </div>
           </div>
 
-          {/* Enterprise Plan */}
+          {/* Essential Plan */}
           <div className="p-8 bg-white rounded-xl shadow-md border border-gray-300">
             <h3 className="text-xl font-semibold text-gray-800">Essential</h3>
-            <p className="mt-4 text-gray-500">
-              For large teams and organizations.
+            <p className=" text-gray-500 mt-4">
+              Simple pricing for your business.
             </p>
             <p className="mt-8 text-4xl font-bold text-gray-800">$50</p>
             <p className="text-gray-500">per month</p>

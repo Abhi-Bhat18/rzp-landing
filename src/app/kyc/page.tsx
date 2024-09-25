@@ -51,7 +51,7 @@ const Kyc = () => {
       );
       
       setCurrentIndex((prevIndex) => (prevIndex + 1));
-    }, 500);
+    }, 2000);
 
     if (currentIndex > 4) {
       clearInterval(timer);

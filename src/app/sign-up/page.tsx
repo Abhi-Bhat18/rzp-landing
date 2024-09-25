@@ -37,7 +37,7 @@ const page = () => {
           <div className="space-y-5">
             <p>Welcome to Razorpay Payments</p>
             <p className="text-xl font-bold">
-              Get started with your email or phone number
+              Get started with your email and contact
             </p>
             <div className="space-y-2">
               <Label>Full Name</Label>
@@ -54,7 +54,7 @@ const page = () => {
           </div>
           <div className="space-y-1">
             <p className="text-xs">Country</p>
-            <ComboboxDemo items={countries} />
+            <ComboboxDemo name="country" items={countries} />
           </div>
           <div className="w-full">
             <Button className="w-full cursor-pointer">

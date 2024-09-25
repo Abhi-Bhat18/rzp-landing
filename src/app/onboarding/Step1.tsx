@@ -39,7 +39,7 @@ const Setp1 : React.FC<Props> = ({ nextStep  }) => {
   // Handle changes in the radio group
   const handlePgChange = (value: string) => {
     setHasPg(value);
-    console.log(`Selected option: ${value}`); // You can use this value for further logic
+
   };
 
   return (
@@ -48,7 +48,7 @@ const Setp1 : React.FC<Props> = ({ nextStep  }) => {
         <p className="text-xl w-full">
           What kind of business are you involved in?
         </p>
-        <ComboboxDemo items={industries} />
+        <ComboboxDemo name="industry" items={industries} />
       </div>
 
       <div className="space-y-5">
@@ -78,7 +78,7 @@ const Setp1 : React.FC<Props> = ({ nextStep  }) => {
       {hasPg === "Yes" && (
         <div className="space-y-5">
           <p className="text-xl w-full">Which ones are you using?</p>
-          <ComboboxDemo items={paymentGateways} />
+          <ComboboxDemo name="pgs" items={paymentGateways} />
         </div>
       )}
 

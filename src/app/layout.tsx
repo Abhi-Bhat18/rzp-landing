@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Roboto_Serif  } from 'next/font/google'
+import StoreProvider from "./StoreProvider";
 
 const roboto = Roboto_Serif({weight : [ '100', '400', '600', '700', '800', '900'], subsets : [ 'cyrillic'] })
 
@@ -19,7 +20,10 @@ export default function RootLayout({
       <body
         className={`${roboto.className}`}
       >
+        <StoreProvider>
+
         {children}
+        </StoreProvider>
       </body>
     </html>
   );

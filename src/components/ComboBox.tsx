@@ -18,15 +18,31 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { updateField } from "@/lib/features/formSlice";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 
 interface Props {
   items: { value: string; label: string }[];
+  name: string;
 }
 
-export const ComboboxDemo: React.FC<Props> = ({ items }) => {
+export const ComboboxDemo: React.FC<Props> = ({ items, name }) => {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
 
+  const dispatch = useAppDispatch();
+  const formData = useAppSelector((state) => state.onboard);
+
+  const handleSelect = (currentValue: string) => {
+    setValue(currentValue === value ? "" : currentValue);
+    dispatch(
+      updateField({
+        field: name,
+        value: currentValue === value ? "" : currentValue,
+      })
+    );
+    setOpen(false);
+  };
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
@@ -52,10 +68,7 @@ export const ComboboxDemo: React.FC<Props> = ({ items }) => {
                 <CommandItem
                   key={framework.value}
                   value={framework.value}
-                  onSelect={(currentValue) => {
-                    setValue(currentValue === value ? "" : currentValue);
-                    setOpen(false);
-                  }}
+                  onSelect={handleSelect}
                 >
                   <Check
                     className={cn(
